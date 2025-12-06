@@ -40,11 +40,11 @@ RCNN-Replication/
 ├── src/
 │   ├── layers/
 │   │   ├── conv_layer.py             # Basic conv + activation + pooling blocks
-│   │   ├── roi_crop.py               # Crop feature maps based on region proposals
-│   │   ├── linear_head.py            # Fully connected classifier (SVM/Softmax)
+│   │   ├── roi_crop_layer.py         # Crop feature maps based on region proposals
+│   │   ├── fc_head.py                # Fully connected classifier (SVM/Softmax)
 │   │
 │   ├── modules/
-│   │   ├── feature_extractor.py      # AlexNet-like backbone for ROI features
+│   │   ├── backbone_alexnet.py      # AlexNet-like backbone for ROI features
 │   │   ├── proposal_generator.py     # Selective Search wrapper to generate ROIs
 │   │   ├── proposal_processor.py     # Crop, resize, normalize each proposal
 │   │
